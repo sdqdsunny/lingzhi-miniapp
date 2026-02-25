@@ -1,0 +1,28 @@
+{
+    "bsonType": "object",
+    "required": [
+        "total_amount"
+    ],
+    "permission": {
+        "read": "true",
+        "create": "false",
+        "update": "false",
+        "delete": "false"
+    },
+    "properties": {
+        "_id": {
+            "description": "ID，系统自动生成"
+        },
+        "total_amount": {
+            "bsonType": "double",
+            "description": "奖金池总金额"
+        },
+        "last_updated": {
+            "bsonType": "timestamp",
+            "description": "最后更新时间",
+            "forceDefaultValue": {
+                "$env": "now"
+            }
+        }
+    }
+}

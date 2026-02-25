@@ -1,0 +1,45 @@
+{
+    "bsonType": "object",
+    "required": [
+        "name",
+        "price",
+        "status"
+    ],
+    "properties": {
+        "_id": {
+            "description": "唯一ID"
+        },
+        "name": {
+            "bsonType": "string",
+            "description": "商品名称"
+        },
+        "description": {
+            "bsonType": "string",
+            "description": "商品描述"
+        },
+        "price": {
+            "bsonType": "number",
+            "description": "商品价格"
+        },
+        "image": {
+            "bsonType": "string",
+            "description": "商品图片URL"
+        },
+        "status": {
+            "bsonType": "string",
+            "enum": [
+                "ACTIVE",
+                "INACTIVE"
+            ],
+            "description": "商品状态"
+        },
+        "sort_order": {
+            "bsonType": "number",
+            "description": "排序权重"
+        },
+        "create_date": {
+            "bsonType": "number",
+            "description": "创建时间戳"
+        }
+    }
+}

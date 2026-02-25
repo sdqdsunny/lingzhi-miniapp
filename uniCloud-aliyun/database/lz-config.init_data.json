@@ -1,0 +1,12 @@
+[
+    {
+        "key": "invite_acceleration_steps",
+        "value": 3,
+        "label": "邀请加速位数"
+    },
+    {
+        "key": "repurchase_acceleration_steps",
+        "value": 2,
+        "label": "复购加速位数"
+    }
+]

@@ -1,0 +1,27 @@
+{
+    "bsonType": "object",
+    "required": [
+        "key"
+    ],
+    "properties": {
+        "_id": {
+            "description": "唯一ID"
+        },
+        "key": {
+            "bsonType": "string",
+            "description": "配置项键名，如: invite_acceleration_steps"
+        },
+        "value": {
+            "bsonType": "number",
+            "description": "配置项值"
+        },
+        "label": {
+            "bsonType": "string",
+            "description": "配置项显示名称"
+        },
+        "update_date": {
+            "bsonType": "number",
+            "description": "更新时间戳"
+        }
+    }
+}

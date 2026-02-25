@@ -1,0 +1,34 @@
+[
+    {
+        "name": "极品灵芝孢子粉 (礼盒)",
+        "description": "长白山野生原木灵芝精制，高破壁率99%",
+        "price": 375,
+        "image": "https://placehold.co/600x600/1A1A2E/D4AF37/png?text=Luxury+Gift+Box",
+        "status": "ACTIVE",
+        "sort_order": 1
+    },
+    {
+        "name": "野生原木灵芝 (特级)",
+        "description": "精选长白山300年以上原生林灵芝",
+        "price": 375,
+        "image": "https://placehold.co/600x600/654321/F5F5DC/png?text=Spore+Powder",
+        "status": "ACTIVE",
+        "sort_order": 2
+    },
+    {
+        "name": "破壁灵芝粉 (罐装)",
+        "description": "超微破壁技术，吸收率提升10倍",
+        "price": 375,
+        "image": "https://placehold.co/600x600/0A320A/228B22/png?text=Wild+Forest",
+        "status": "ACTIVE",
+        "sort_order": 3
+    },
+    {
+        "name": "灵芝切片 (超值装)",
+        "description": "适合煲汤泡茶，滋补养生首选",
+        "price": 375,
+        "image": "https://placehold.co/600x600/8B0000/FFBF00/png?text=Lingzhi+Tea",
+        "status": "ACTIVE",
+        "sort_order": 4
+    }
+]

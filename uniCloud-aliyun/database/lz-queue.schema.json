@@ -1,0 +1,58 @@
+{
+    "bsonType": "object",
+    "required": [
+        "order_id",
+        "user_id",
+        "status"
+    ],
+    "permission": {
+        "read": "true",
+        "create": "false",
+        "update": "false",
+        "delete": "false"
+    },
+    "indexes": [
+        {
+            "keys": {
+                "status": 1,
+                "enter_time": 1
+            }
+        },
+        {
+            "keys": {
+                "order_id": 1
+            },
+            "unique": true
+        }
+    ],
+    "properties": {
+        "_id": {
+            "description": "ID，系统自动生成"
+        },
+        "order_id": {
+            "bsonType": "string",
+            "description": "关联订单ID",
+            "foreignKey": "lz-orders._id"
+        },
+        "user_id": {
+            "bsonType": "string",
+            "description": "用户ID",
+            "foreignKey": "uni-id-users._id"
+        },
+        "status": {
+            "bsonType": "string",
+            "description": "状态: WAITING-排队中, PROMOTED-已免单",
+            "enum": [
+                "WAITING",
+                "PROMOTED"
+            ]
+        },
+        "enter_time": {
+            "bsonType": "timestamp",
+            "description": "入队时间",
+            "forceDefaultValue": {
+                "$env": "now"
+            }
+        }
+    }
+}

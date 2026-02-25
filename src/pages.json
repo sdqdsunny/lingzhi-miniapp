@@ -1,0 +1,108 @@
+{
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^u-(.*)": "uview-plus/components/u-$1/u-$1.vue"
+		}
+	},
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "灵芝商城"
+			}
+		},
+		{
+			"path": "pages/queue/queue",
+			"style": {
+				"navigationBarTitleText": "排队状态"
+			}
+		},
+		{
+			"path": "pages/profile/profile",
+			"style": {
+				"navigationBarTitleText": "个人中心"
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/register/register",
+			"style": {
+				"navigationBarTitleText": "注册"
+			}
+		},
+		{
+			"path": "pages/admin/dashboard",
+			"style": {
+				"navigationBarTitleText": "管理控制台"
+			}
+		}
+	],
+	"subPackages": [
+		{
+			"root": "pages/order",
+			"pages": [
+				{
+					"path": "confirm",
+					"style": {
+						"navigationBarTitleText": "确认订单"
+					}
+				},
+				{
+					"path": "list",
+					"style": {
+						"navigationBarTitleText": "我的订单"
+					}
+				}
+			]
+		},
+		{
+			"root": "pages/share",
+			"pages": [
+				{
+					"path": "invite",
+					"style": {
+						"navigationBarTitleText": "邀请好友"
+					}
+				}
+			]
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "灵芝商城",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#909399",
+		"selectedColor": "#D4AF37",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "static/tabbar/home.png",
+				"selectedIconPath": "static/tabbar/home-selected.png"
+			},
+			{
+				"pagePath": "pages/queue/queue",
+				"text": "排队",
+				"iconPath": "static/tabbar/queue.png",
+				"selectedIconPath": "static/tabbar/queue-selected.png"
+			},
+			{
+				"pagePath": "pages/profile/profile",
+				"text": "我的",
+				"iconPath": "static/tabbar/profile.png",
+				"selectedIconPath": "static/tabbar/profile-selected.png"
+			}
+		]
+	}
+}
